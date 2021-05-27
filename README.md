@@ -1,2 +1,2 @@
 # Password_Manager
-just startet - not to use ^^
+just started - not to use ^^
