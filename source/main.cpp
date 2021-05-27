@@ -4,6 +4,7 @@
 #include <vector>
 #include "login.h"
 #include "password_generator.h"
+#include "encryption.h"
 
 int main() {
     bool logged = login();
