@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login.h
+windows.h
+-
+
+D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/main.cpp
+iostream
+-
+fstream
+-
+string
+-
+vector
+-
+login.h
+D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login.h
+password_generator.h
+D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/password_generator.h
+
+D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/password_generator.h
+iostream
+-
+vector
+-
+
