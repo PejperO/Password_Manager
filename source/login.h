@@ -13,7 +13,7 @@ bool login(){
         if(password_login == AppPassword){
             std::cout << "You have been successfully logged in!" << std::endl;
             Sleep(1000);
-            system("cls");  //not working on CLion ?
+            system("cls");  //not working on CLion Terminal?
             return true;
         }
         else {

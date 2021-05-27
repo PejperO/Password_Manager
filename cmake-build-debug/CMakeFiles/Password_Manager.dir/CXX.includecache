@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/encryption.h
+iostream
+-
+algorithm
+-
+
 D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login.h
 windows.h
 -
@@ -23,6 +29,8 @@ login.h
 D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login.h
 password_generator.h
 D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/password_generator.h
+encryption.h
+D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/encryption.h
 
 D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/password_generator.h
 iostream
