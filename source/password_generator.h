@@ -7,6 +7,7 @@ void PasswordGenerator(){
     std::cin >> size;
 
     std::vector<char> password;
+
     for(int i =0; i < size; ++i){
         password.push_back(48 + rand() % 75);  //ASCII
         std::cout << password[i];

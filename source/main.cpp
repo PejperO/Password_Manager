@@ -6,8 +6,8 @@
 #include "password_generator.h"
 
 int main() {
-
     bool logged = login();
+
     if(logged){
         std::ifstream file1;
         file1.open("data/pass.txt");
@@ -42,7 +42,6 @@ int main() {
                 << std::endl;
             }
         }
-
     }
 
     int get;
