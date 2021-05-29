@@ -1,6 +1,0 @@
-social facebook 1234
-social twitter 4321
-mail gmail 2431
-mail o2 2132
-finance mBank 2341
-finance Millenium 2341

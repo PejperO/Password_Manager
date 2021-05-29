@@ -1,5 +1,3 @@
-#include <iostream>
-#include <algorithm>
 
 std::string encryption(std::string password){
 
