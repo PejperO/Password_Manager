@@ -8,7 +8,7 @@ int main() {
     /*
      TO DO:
      - sorting parameters ( 2 different parameters )
-     - adding deleting new categories ( with passwords )
+     - adding deleting passwords or categories
     */
 
     bool logged = login();
