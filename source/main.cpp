@@ -7,7 +7,6 @@ int main() {
 
     /*
      TO DO:
-     - last login timestamp
      - sorting parameters ( 2 different parameters )
      - adding deleting new categories ( with passwords )
     */

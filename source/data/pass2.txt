@@ -1,4 +1,5 @@
-qukenc jeden 3456 
+1872 1847 3863
+qukenc jeden 3456
 qukenc dwa 4567 
 conk trzy 5678 
 conk cztery 6789 

@@ -1,5 +1,6 @@
 #include <fstream>
 #include <vector>
+#include <ctime>
 #include "encryption.h"
 
 class File{  // idk why, just bc ^^
@@ -8,12 +9,11 @@ public:
     void write(int type);
     void show();
 private:
-    std::string name;
-    std::string password;
-    std::string category;
-    std::vector <std::string> names;
-    std::vector <std::string> passwords;
-    std::vector <std::string> categories;
+    time_t now;
+    struct tm nowLocal;
+    int day, month, year;
+    std::string name, password, category;
+    std::vector <std::string> names, passwords, categories;
 };
 
 void File::read(int type){
@@ -24,13 +24,18 @@ void File::read(int type){
     else
         reading.open("data/pass2.txt");
 
+    reading >> day >> month >> year;
+    day = IntDecryption( day );
+    month = IntDecryption( month );
+    year = IntDecryption( year );
+
     while (true)
     {
         reading >> category >> name >> password;
         if (!reading.fail()) {
-            categories.push_back( encryption( category ) );
-            names.push_back( encryption( name ) );
-            passwords.push_back( encryption( password ) );
+            categories.push_back(decryption(category) );
+            names.push_back(decryption(name) );
+            passwords.push_back(decryption(password) );
         }
         else
             break;
@@ -46,11 +51,17 @@ void File::write(int type){
     else
         writing.open("data/pass2.txt");
 
+    now = time(NULL);
+    nowLocal = *localtime(&now);
+    writing << IntEncryption( nowLocal.tm_mday ) << " "
+    << IntEncryption( nowLocal.tm_mon + 1 ) << " "
+    << IntEncryption( nowLocal.tm_year + 1900 ) << std::endl;
+
     for(int i =0; i < categories.size() ; ++i) {
         writing
-                << decryption( categories[i] ) << " "
-                << decryption( names[i] ) << " "
-                << decryption( passwords[i] ) << " "
+                << encryption(categories[i]) << " "
+                << encryption(names[i]) << " "
+                << encryption(passwords[i]) << " "
                 << std::endl;
     }
 
@@ -58,14 +69,16 @@ void File::write(int type){
 }
 
 void File::show(){
-    std::cout << "which category you are interested in?" << std::endl;
 
+    std::cout << "The last time you opened this file was: "
+    << day << "." << month << "." << year << std::endl << std::endl;
+
+    std::cout << "which category you are interested in?" << std::endl;
     for(int i =0; i < categories.size(); ++i){
         if(categories[i] != categories[i+1])
             std::cout << "< " << categories[i] << " > ";
     }
     std::cout << std::endl;
-
     std::cin >> category;
 
     for(int i =0; i < categories.size() ; ++i){
