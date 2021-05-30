@@ -7,8 +7,8 @@ int main() {
 
     /*
      TO DO:
-     - sorting parameters ( 2 different parameters )
      - adding deleting passwords or categories
+     - sorting parameters ( 2 different parameters )
     */
 
     bool logged = login();
