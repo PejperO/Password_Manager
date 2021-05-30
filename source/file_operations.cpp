@@ -2,6 +2,7 @@
 #include <vector>
 #include <ctime>
 #include "encryption.h"
+#include "main.cpp"
 
 class File{  // idk why, just bc ^^
 public:
@@ -81,12 +82,33 @@ void File::show(){
     std::cout << std::endl;
     std::cin >> category;
 
-    for(int i =0; i < categories.size() ; ++i){
-        if( category == categories[i] ){
-            std::cout
-                    << "name: " << names[i] << " "
-                    << "password: "<< passwords[i] << " "
-                    << std::endl;
+    int type = 0;
+    while(type < 1 || type > 3) {
+
+        for(int i =0; i < categories.size() ; ++i){
+            if( category == categories[i] ){
+                std::cout
+                << "name: " << names[i] << " "
+                << "password: "<< passwords[i] << " "
+                << std::endl;
+            }
         }
+        std::cout << std::endl;
+
+        std::cout << "type 1 if you want to edit passwords" << std::endl;
+        std::cout << "type 2 if you want to go back to desktop" << std::endl;
+        std::cout << "type 3 if you want to exit" << std::endl;
+        std::cin >> type;
+    }
+
+    switch (type) {
+        case 1:
+            std::cout << "not available yet" << std::endl;
+            break;
+        case 2:
+            desktop();
+            break;
+        default:
+            break;
     }
 }
