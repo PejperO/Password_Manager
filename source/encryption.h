@@ -1,5 +1,4 @@
 std::string encryption(std::string password){
-
     for(char & i : password) {
         if( (int)i > 120 )
             i = (int)i - 89 + 1;
@@ -13,7 +12,6 @@ std::string encryption(std::string password){
 }
 
 std::string decryption(std::string password){
-
     for(char & i : password) {
         if( (int)i <35 )
             i = (int)i + 89 - 1;

@@ -62,10 +62,10 @@ void File::write(int type){
 
     for(int i =0; i < categories.size() ; ++i) {
         writing
-                << encryption(categories[i]) << " "
-                << encryption(names[i]) << " "
-                << encryption(passwords[i]) << " "
-                << std::endl;
+        << encryption(categories[i]) << " "
+        << encryption(names[i]) << " "
+        << encryption(passwords[i]) << " "
+        << std::endl;
     }
 
     writing.close();
@@ -84,6 +84,7 @@ int File::show(int type){
 
     std::cout << "which category you are interested in?" << std::endl;
     std::cout << "write < all > to see all the passwords" <<std::endl;
+
     int k =0;
     for(int i =0; i < categories.size(); ++i){
         for(int j = categories.size() -1; j > i; --j)
@@ -165,6 +166,7 @@ int File::edit(int type){
             std::cout << "at least one password must exist in the new category" << std::endl;
             std::cout << "what is the name of your new password?" << std::endl;
             std::cin >> name;
+
             for(int i =0; i < names.size(); ++i){
                 if(name == names[i])
                     category_name = true;
@@ -174,16 +176,19 @@ int File::edit(int type){
                 Sleep(1000);
                 edit(type);
             }
+
             std::cout << "what is the password of your new password?" << std::endl;
             std::cin >> password;
             categories.push_back( category );
             names.push_back( name );
             passwords.push_back( password );
+
             std::cout << "your new password is now in the library!" << std::endl;
             Sleep(1000);
             write(type);
             edit(type);
             break;
+
         case 2:
             std::cout << "to which category you want to add new password?" << std::endl;
             for(int i =0; i < categories.size(); ++i){
@@ -223,16 +228,19 @@ int File::edit(int type){
                 Sleep(1000);
                 edit(type);
             }
+
             std::cout << "what is the password of your new password?" << std::endl;
             std::cin >> password;
             categories.push_back( category );
             names.push_back( name );
             passwords.push_back( password );
+
             std::cout << "your new password is now in the library!" << std::endl;
             Sleep(1000);
             write(type);
             edit(type);
             break;
+
         case 3:
             std::cout << "what is the name of the password?" << std::endl;
             std::cin >> name;
@@ -243,11 +251,13 @@ int File::edit(int type){
                     passwords.erase(passwords.begin() + i);
                 }
             }
+
             std::cout << "all of passwords with name " << name << " deleted" << std::endl;
             Sleep(1000);
             write(type);
             edit(type);
             break;
+
         case 4:
             std::cout << "what is the name of the category?" << std::endl;
             std::cin >> category;
@@ -258,11 +268,13 @@ int File::edit(int type){
                     passwords.erase(passwords.begin() + i);
                 }
             }
+
             std::cout << "all of passwords with category " << category << " deleted" << std::endl;
             Sleep(1000);
             write(type);
             edit(type);
             break;
+
         case 5:
             return 10;
         default:

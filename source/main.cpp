@@ -7,8 +7,8 @@
 #include "file_operations.cpp"
 
 void desktop(){
-    File file;
 
+    File file;
     int type = 0;
     while(type < 1 || type > 4){
         system("cls");
@@ -25,7 +25,6 @@ void desktop(){
             type = file.show(type);
             break;
         case 3:
-            //type = PasswordGenerator(0);
             std::cout << "not available yet" << std::endl;
             break;
         default:
@@ -36,12 +35,6 @@ void desktop(){
 }
 
 int main() {
-
-    /*
-     TO DO:
-     - sorting parameters ( 2 different parameters )
-    */
-
     bool logged = login();
 
     if(logged)
