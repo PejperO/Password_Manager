@@ -1,2 +1,2 @@
 # Password_Manager
-just started - not to use ^^
+pre-alpha version ( v0.23 )

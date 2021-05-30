@@ -24,9 +24,6 @@ void desktop(){
         case 1: case 2:
             type = file.show(type);
             break;
-        case 3:
-            std::cout << "not available yet" << std::endl;
-            break;
         default:
             break;
     }
@@ -43,3 +40,11 @@ int main() {
     system("cls");
     system("pause");
 }
+/*
+ TO DO:
+ - Sort the passwords according to at least 2 different parameters
+ - Use enums
+ - Custom namespaces
+ - Use data structure
+ - Turn on password generator
+*/

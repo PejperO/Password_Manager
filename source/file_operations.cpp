@@ -4,6 +4,7 @@ class File{
 public:
     void read(int type);
     void write(int type);
+    void show_categories();
     int show(int type);
     int edit(int type);
 private:
@@ -83,19 +84,10 @@ int File::show(int type){
     << std::endl << std::endl;
 
     std::cout << "which category you are interested in?" << std::endl;
-    std::cout << "write < all > to see all the passwords" <<std::endl;
-
-    int k =0;
-    for(int i =0; i < categories.size(); ++i){
-        for(int j = categories.size() -1; j > i; --j)
-            if (categories[i] == categories[j])
-                ++k;
-        if(k != 0)
-            k = 0;
-        else
-            std::cout << "< " << categories[i] << " > ";
-    }
     std::cout << std::endl;
+    std::cout << "write < all > to see all the passwords" <<std::endl;
+    std::cout << "categories in file " << type << " ";
+    show_categories();
     std::cin >> category;
 
     int kind = 0;
@@ -191,16 +183,7 @@ int File::edit(int type){
 
         case 2:
             std::cout << "to which category you want to add new password?" << std::endl;
-            for(int i =0; i < categories.size(); ++i){
-                for(int j = categories.size() -1; j > i; --j)
-                    if (categories[i] == categories[j])
-                        ++k;
-                if(k != 0)
-                    k = 0;
-                else
-                    std::cout << "< " << categories[i] << " > ";
-            }
-            std::cout << std::endl;
+            show_categories();
             std::cin >> category;
 
             for(int i =0; i < categories.size(); ++i) {
@@ -219,6 +202,7 @@ int File::edit(int type){
 
             std::cout << "what is the name of your new password?" << std::endl;
             std::cin >> name;
+            category_name = false;
             for(int i =0; i < names.size(); ++i){
                 if(name == names[i])
                     category_name = true;
@@ -281,4 +265,19 @@ int File::edit(int type){
             break;
     }
     return 0;
+}
+
+void File::show_categories(){
+    int k =0;
+
+    for(int i =0; i < categories.size(); ++i){
+        for(int j = categories.size() -1; j > i; --j)
+            if (categories[i] == categories[j])
+                ++k;
+        if(k != 0)
+            k = 0;
+        else
+            std::cout << "< " << categories[i] << " > ";
+    }
+    std::cout << std::endl;
 }
