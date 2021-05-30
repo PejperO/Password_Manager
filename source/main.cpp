@@ -25,9 +25,7 @@ void desktop(){
 
     switch (type) {
         case 1: case 2:
-            file.read(type);
-            file.show();
-            file.write(type);
+            file.show(type);
             break;
         case 3:
             std::cout << "not available yet" << std::endl;

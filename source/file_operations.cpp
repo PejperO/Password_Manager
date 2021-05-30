@@ -4,7 +4,7 @@ class File{
 public:
     void read(int type);
     void write(int type);
-    void show();
+    void show(int type);
 private:
     time_t now;
     struct tm nowLocal;
@@ -70,7 +70,9 @@ void File::write(int type){
     writing.close();
 }
 
-void File::show(){
+void File::show(int type){
+
+    read(type);
 
     std::cout << "The last time you opened this file was: "
     << hour << ":";
@@ -87,8 +89,8 @@ void File::show(){
     std::cout << std::endl;
     std::cin >> category;
 
-    int type = 0;
-    while(type < 1 || type > 3) {
+    int kind = 0;
+    while(kind < 1 || kind > 3) {
 
         for(int i =0; i < categories.size() ; ++i){
             if( category == categories[i] ){
@@ -103,10 +105,10 @@ void File::show(){
         std::cout << "type 1 if you want to edit passwords" << std::endl;
         std::cout << "type 2 if you want to go back to desktop" << std::endl;
         std::cout << "type 3 if you want to exit" << std::endl;
-        std::cin >> type;
+        std::cin >> kind;
     }
 
-    switch (type) {
+    switch (kind) {
         case 1:
             std::cout << "not available yet" << std::endl;
             break;
@@ -114,6 +116,6 @@ void File::show(){
             std::cout << "not available yet 2" << std::endl;
             break;
         default:
-            break;
+            write(type);
     }
 }
