@@ -1,10 +1,6 @@
-#include <fstream>
-#include <vector>
-#include <ctime>
 #include "encryption.h"
-#include "main.cpp"
 
-class File{  // idk why, just bc ^^
+class File{
 public:
     void read(int type);
     void write(int type);
@@ -12,7 +8,7 @@ public:
 private:
     time_t now;
     struct tm nowLocal;
-    int day, month, year;
+    int hour, minute, day, month, year;
     std::string name, password, category;
     std::vector <std::string> names, passwords, categories;
 };
@@ -25,7 +21,9 @@ void File::read(int type){
     else
         reading.open("data/pass2.txt");
 
-    reading >> day >> month >> year;
+    reading >> hour >> minute >> day >> month >> year;
+    hour = IntDecryption( hour );
+    minute = IntDecryption( minute );
     day = IntDecryption( day );
     month = IntDecryption( month );
     year = IntDecryption( year );
@@ -54,7 +52,10 @@ void File::write(int type){
 
     now = time(NULL);
     nowLocal = *localtime(&now);
-    writing << IntEncryption( nowLocal.tm_mday ) << " "
+    writing
+    << IntEncryption( nowLocal.tm_hour ) << " "
+    << IntEncryption( nowLocal.tm_min ) << " "
+    << IntEncryption( nowLocal.tm_mday ) << " "
     << IntEncryption( nowLocal.tm_mon + 1 ) << " "
     << IntEncryption( nowLocal.tm_year + 1900 ) << std::endl;
 
@@ -72,7 +73,11 @@ void File::write(int type){
 void File::show(){
 
     std::cout << "The last time you opened this file was: "
-    << day << "." << month << "." << year << std::endl << std::endl;
+    << hour << ":";
+    if(minute < 10)
+        std::cout << "0";
+    std::cout << minute << " " <<day << "." << month << "." << year
+    << std::endl << std::endl;
 
     std::cout << "which category you are interested in?" << std::endl;
     for(int i =0; i < categories.size(); ++i){
@@ -106,7 +111,7 @@ void File::show(){
             std::cout << "not available yet" << std::endl;
             break;
         case 2:
-            desktop();
+            std::cout << "not available yet 2" << std::endl;
             break;
         default:
             break;

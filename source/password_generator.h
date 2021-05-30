@@ -1,5 +1,3 @@
-#include <ctime>
-
 void PasswordGenerator(){
     srand(time(nullptr));
 

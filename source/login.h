@@ -1,5 +1,3 @@
-#include <windows.h>
-
 bool login(){
     std::string AppPassword = "yes";
 

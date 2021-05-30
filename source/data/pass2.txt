@@ -1,7 +1,7 @@
-1872 1847 3863
-qukenc jeden 3456
+1859 1850 1872 1847 3863
+qukenc jeden 3456 
 qukenc dwa 4567 
 conk trzy 5678 
 conk cztery 6789 
 khcpepg piec 7899 
-khcpepg szesc 8992
+khcpepg szesc 8992 

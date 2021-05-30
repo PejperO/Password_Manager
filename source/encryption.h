@@ -1,4 +1,3 @@
-
 std::string encryption(std::string password){
 
     for(char & i : password) {
@@ -34,11 +33,3 @@ int IntEncryption(int data){
 int IntDecryption(int data){
     return data -= 1842;
 }
-
-/*
- ASCII
- my range of characters -> ( 33 - 122 )
- 48 - 57 -> numbers
- 65 - 90 -> capital letters
- 97 - 122 -> letters
-*/
