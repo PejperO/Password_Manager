@@ -1,2 +1,2 @@
 # Password_Manager
-pre-alpha version ( v0.28 )
+pre-beta version ( v0.71 )
