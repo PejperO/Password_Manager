@@ -1,4 +1,5 @@
 #include "encryption.h"
+#include "sorting.h"
 
 class File{
 public:
