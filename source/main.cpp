@@ -5,6 +5,7 @@
 #include <ctime>
 #include "login.h"
 #include "file_operations.cpp"
+#include "login_file.h"
 
 void desktop(){
 
@@ -21,8 +22,13 @@ void desktop(){
     system("cls");
 
     switch (type) {
-        case 1: case 2:
-            type = file.show(type);
+        case 1:
+            if(login_file(1))
+                type = file.show(type);
+            break;
+        case 2:
+            if(login_file(2))
+                type = file.show(type);
             break;
         default:
             break;

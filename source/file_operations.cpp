@@ -1,11 +1,14 @@
 #include "encryption.h"
-#include "sorting.h"
+//#include "sorting.h"
 
 class File{
 public:
     void read(int type);
     void write(int type);
     void show_categories();
+    void sort();
+    void ascending();
+    void descending();
     int show(int type);
     int edit(int type);
 private:
@@ -92,7 +95,7 @@ int File::show(int type){
     std::cin >> category;
 
     int kind = 0;
-    while(kind < 1 || kind > 3) {
+    while(kind < 1 || kind > 4) {
 
         if(category == "all"){
             for(int i =0; i < categories.size() ; ++i){
@@ -117,7 +120,8 @@ int File::show(int type){
 
         std::cout << "type 1 if you want to edit passwords" << std::endl;
         std::cout << "type 2 if you want to go back to desktop" << std::endl;
-        std::cout << "type 3 if you want to exit" << std::endl;
+        std::cout << "type 3 if you want to sort by names" << std::endl;
+        std::cout << "type 4 if you want to exit" << std::endl;
         std::cin >> kind;
     }
 
@@ -128,8 +132,15 @@ int File::show(int type){
         case 2:
             write(type);
             return 10;
-        default:
+        case 3:
+            sort();
+            show(type);
+            break;
+        case 4:
             write(type);
+            break;
+        default:
+            show(type);
     }
     if(type == 10)
         return 10;
@@ -281,4 +292,47 @@ void File::show_categories(){
             std::cout << "< " << categories[i] << " > ";
     }
     std::cout << std::endl;
+}
+
+void File::sort(){
+    system("cls");
+    std::cout << "type 1 if you want to sort up" << std::endl;
+    std::cout << "type 2 if you want to sort down" << std::endl;
+    int choose;
+    std::cin >> choose;
+
+    switch (choose) {
+        case 1:
+            ascending();
+            break;
+        case 2:
+            descending();
+            break;
+        default:
+            sort();
+    }
+}
+
+void File::ascending(){
+    for (int i=0; i<names.size()-1; ++i) {
+        for (int j = 0; j < names.size()-1; ++j) {
+            if (names[j] > names[j + 1]) {
+                swap(names[j], names[j + 1]);
+                swap(passwords[j], passwords[j + 1]);
+                swap(categories[j], categories[j + 1]);
+            }
+        }
+    }
+}
+
+void File::descending(){
+    for (int i=0; i<names.size()-1; ++i) {
+        for (int j = 0; j < names.size()-1; ++j) {
+            if (names[j] < names[j + 1]) {
+                swap(names[j], names[j + 1]);
+                swap(passwords[j], passwords[j + 1]);
+                swap(categories[j], categories[j + 1]);
+            }
+        }
+    }
 }

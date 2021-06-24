@@ -8,25 +8,31 @@
 
 D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/encryption.h
 
+D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/file_operations.cpp
+encryption.h
+D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/encryption.h
+sorting.h
+D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/sorting.h
+
 D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login.h
-windows.h
--
 
 D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/main.cpp
 iostream
 -
-fstream
--
-string
+windows.h
 -
 vector
 -
+fstream
+-
+ctime
+-
 login.h
 D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login.h
-password_generator.h
-D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/password_generator.h
-encryption.h
-D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/encryption.h
+file_operations.cpp
+D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/file_operations.cpp
 
-D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/password_generator.h
+D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/sorting.h
+algorithm
+-
 
