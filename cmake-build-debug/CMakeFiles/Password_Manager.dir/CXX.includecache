@@ -9,12 +9,14 @@
 D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/encryption.h
 
 D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/file_operations.cpp
+algorithm
+-
 encryption.h
 D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/encryption.h
-sorting.h
-D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/sorting.h
 
 D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login.h
+
+D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login_file.h
 
 D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/main.cpp
 iostream
@@ -31,8 +33,6 @@ login.h
 D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login.h
 file_operations.cpp
 D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/file_operations.cpp
-
-D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/sorting.h
-algorithm
--
+login_file.h
+D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login_file.h
 

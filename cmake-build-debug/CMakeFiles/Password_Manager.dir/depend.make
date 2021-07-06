@@ -4,6 +4,6 @@
 CMakeFiles/Password_Manager.dir/source/main.cpp.obj: ../source/encryption.h
 CMakeFiles/Password_Manager.dir/source/main.cpp.obj: ../source/file_operations.cpp
 CMakeFiles/Password_Manager.dir/source/main.cpp.obj: ../source/login.h
+CMakeFiles/Password_Manager.dir/source/main.cpp.obj: ../source/login_file.h
 CMakeFiles/Password_Manager.dir/source/main.cpp.obj: ../source/main.cpp
-CMakeFiles/Password_Manager.dir/source/main.cpp.obj: ../source/sorting.h
 
