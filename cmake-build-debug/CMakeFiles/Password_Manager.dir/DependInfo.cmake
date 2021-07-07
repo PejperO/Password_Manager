@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/main.cpp" "D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/cmake-build-debug/CMakeFiles/Password_Manager.dir/source/main.cpp.obj"
+  "C:/Users/mikip/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/main.cpp" "C:/Users/mikip/Documents/00.PROJEKT/Studia/PJC/Password_Manager/cmake-build-debug/CMakeFiles/Password_Manager.dir/source/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

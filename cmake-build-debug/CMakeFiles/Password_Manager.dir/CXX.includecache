@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/encryption.h
+C:/Users/mikip/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/encryption.h
 
-D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/file_operations.cpp
+C:/Users/mikip/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/file_operations.cpp
 algorithm
 -
 encryption.h
-D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/encryption.h
+C:/Users/mikip/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/encryption.h
 
-D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login.h
+C:/Users/mikip/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login.h
 
-D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login_file.h
+C:/Users/mikip/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login_file.h
 
-D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/main.cpp
+C:/Users/mikip/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/main.cpp
 iostream
 -
 windows.h
@@ -30,9 +30,9 @@ fstream
 ctime
 -
 login.h
-D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login.h
+C:/Users/mikip/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login.h
 file_operations.cpp
-D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/file_operations.cpp
+C:/Users/mikip/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/file_operations.cpp
 login_file.h
-D:/UserMP/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login_file.h
+C:/Users/mikip/Documents/00.PROJEKT/Studia/PJC/Password_Manager/source/login_file.h
 
