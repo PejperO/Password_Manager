@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/mikip/Documents/00.PROJEKT/Studia/PJC/Password_Manager
+# Install script for directory: D:/UserMP/Documents/00.PROJEKT/Studia/2 SEM/PJC/Password_Manager
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/mikip/Documents/00.PROJEKT/Studia/PJC/Password_Manager/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/UserMP/Documents/00.PROJEKT/Studia/2 SEM/PJC/Password_Manager/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

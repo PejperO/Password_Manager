@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\mikip\Documents\00.PROJEKT\Studia\PJC\Password_Manager
+"C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\UserMP\Documents\00.PROJEKT\Studia\2 SEM\PJC\Password_Manager"
 -- The C compiler identification is GNU 9.2.0
 -- The CXX compiler identification is GNU 9.2.0
 -- Detecting C compiler ABI info
@@ -13,4 +13,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/mikip/Documents/00.PROJEKT/Studia/PJC/Password_Manager/cmake-build-debug
+-- Build files have been written to: D:/UserMP/Documents/00.PROJEKT/Studia/2 SEM/PJC/Password_Manager/cmake-build-debug
