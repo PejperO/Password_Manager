@@ -1,3 +1,0 @@
-D:/UserMP/Documents/00.PROJEKT/Studia/2 SEM/PJC/Password_Manager/cmake-build-debug/CMakeFiles/Password_Manager.dir
-D:/UserMP/Documents/00.PROJEKT/Studia/2 SEM/PJC/Password_Manager/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/UserMP/Documents/00.PROJEKT/Studia/2 SEM/PJC/Password_Manager/cmake-build-debug/CMakeFiles/rebuild_cache.dir
